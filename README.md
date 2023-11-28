@@ -1,2 +1,39 @@
 # freesurfer6_pipeline
-Pipeline for processing MRI T1/T2 scans using Freesurfer recon-all workflow followed by hippocampal-subfields segmentations.
+Run Freesurfer version 6 recon-all workflow with or without hippocampal subfields segmentations and collect all stats outputs in a single file in json format.
+
+## build docker image
+
+```bash
+
+docker build -t freesurfer6_pipeline -f docker/Dockerfile .
+
+```
+
+## or pull from docker hub
+```
+docker pull dznerheinlandstudie/rheinlandstudie:freesurfer6_pipeline
+```
+
+## run pipeline
+
+The pipeline can be run by running the docker container as follow:
+
+
+```bash
+
+ docker run --rm -v /path/to/fs_license.txt:/opt/freesurfer/license.txt \
+                 -v /path/to/input_scans:/input \
+                 -v /path/to/work_folder:/work \
+                 -v /path/to/fsoutput:/output \
+        freesurfer6_pipeline run_fs_pipeline \
+        -s /input \
+        --subjects test_subject_01 \
+        -w /work \
+        -o /output \ 
+        -a 3T qcache -fT1T2 -p 4 -t 2
+
+```
+
+Command line options are described briefly if the pipeline is started with ```-h ``` option.
+
+
