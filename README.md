@@ -27,7 +27,8 @@ The pipeline can be run with docker by running the container as follow:
                  -v /path/to/input_scans:/input \
                  -v /path/to/work_folder:/work \
                  -v /path/to/fsoutput:/output \
-        freesurfer6_pipeline run_fs_pipeline \
+        dznerheinlandstudie/rheinlandstudie:freesurfer6_pipeline \
+        run_fs_pipeline \
         -s /input \
         --subjects test_subject_01 \
         -w /work \
