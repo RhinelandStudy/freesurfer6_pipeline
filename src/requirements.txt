@@ -1,0 +1,11 @@
+scipy==0.19.1
+networkx==1.11
+prov==1.5.1
+six==1.11.0
+nipype==0.13.1
+pyOpenSSL==17.5.0
+psycopg2==2.7.3.2
+pyxnat==1.0.0.0
+pycrypto==2.6.1
+matplotlib==2.1.0
+nibabel==2.2.1
