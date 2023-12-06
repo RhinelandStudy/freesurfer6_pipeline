@@ -46,9 +46,6 @@ The pipeline can be run with Singularity by running the singularity image as fol
 
 ```bash
 
-export SINGULARITY_DOCKER_USERNAME=username
-export SINGULARITY_DOCKER_PASSWORD=password
-
 
 singularity build freesurfer6_pipeline.sif docker://dznerheinlandstudie/rheinlandstudie:freesurfer6_pipeline
 
