@@ -1,5 +1,8 @@
 # freesurfer6_pipeline
-Run Freesurfer version 6 recon-all workflow with or without hippocampal subfields segmentations and collect all stats outputs in a single file in json format.
+
+This repository contains a Nipype wrapper for FreeSurfer version 6 recon-all workflow with or without hippocampal subfields segmentations and collect all stats outputs in a single file in json format.
+
+If you use this wrapper, please cite the FreeSurfer pipeline as stated on their website.[link](https://surfer.nmr.mgh.harvard.edu/fswiki/FreeSurferMethodsCitation) 
 
 ## Build docker image
 
